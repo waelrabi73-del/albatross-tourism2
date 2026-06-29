@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALBATROSS Travel — Fly Further</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== TOP TICKER ===== -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>✈ Summer offer — Turkey from $399</span>
+    <span>🏖 20% off all Aqaba getaways</span>
+    <span>📞 Book in two minutes on WhatsApp</span>
+    <span>✈ Summer offer — Turkey from $399</span>
+    <span>🏖 20% off all Aqaba getaways</span>
+    <span>📞 Book in two minutes on WhatsApp</span>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="nav-wrap">
+  <nav class="navbar">
+    <a href="#" class="logo">ALBATROSS</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#offers">Offers</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#journal">Journal</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-cta">Book Now</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Albatross Travel Co.</p>
+      <h1>Some birds<br>circle the globe<br><em>before they land.</em></h1>
+      <p class="hero-sub">Curated trips, honest prices, and an albatross's sense of direction — wherever the wind takes you, we've already mapped it.</p>
+      <div class="hero-actions">
+        <a href="#offers" class="btn btn-primary">Explore Offers</a>
+        <a href="#contact" class="btn btn-outline">Plan My Trip</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg class="albatross-svg" viewBox="0 0 600 600" aria-hidden="true">
+        <path id="flightpath" d="M -50 420 C 100 300, 200 460, 320 320 S 520 120, 650 160" fill="none" stroke="var(--sand)" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.5"/>
+        <g id="bird">
+          <path d="M0 0 C -40 -10, -90 5, -130 -25 C -90 -2, -50 10, -10 8 C 30 10, 70 -2, 110 -25 C 70 5, 40 -10, 0 0 Z" fill="var(--navy)"/>
+        </g>
+      </svg>
+      <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200&auto=format&fit=crop" alt="Traveler with suitcase and boarding pass at the airport" class="hero-photo">
+    </div>
+  </div>
+
+  <div class="quick-search">
+    <div class="qs-field">
+      <label>Destination</label>
+      <input type="text" placeholder="Where to?">
+    </div>
+    <div class="qs-field">
+      <label>Departure</label>
+      <input type="date">
+    </div>
+    <div class="qs-field">
+      <label>Travelers</label>
+      <input type="number" min="1" value="2">
+    </div>
+    <button class="btn btn-primary qs-submit">Find a Trip</button>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="why" id="about">
+  <div class="why-grid">
+    <div class="why-item">
+      <span class="why-icon">$</span>
+      <h3>Fair Prices</h3>
+      <p>No hidden fees, no last-minute markups — the price you see is the price you pay.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-icon">⚡</span>
+      <h3>Fast Booking</h3>
+      <p>Reserve a trip in minutes, straight from your phone, with confirmation the same day.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-icon">💬</span>
+      <h3>Real Support</h3>
+      <p>A human on WhatsApp, not a bot — before, during, and after your trip.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-icon">🏨</span>
+      <h3>Trusted Partners</h3>
+      <p>Hotels and transport we've personally vetted across every destination we sell.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OFFERS ===== -->
+<section class="offers" id="offers">
+  <div class="section-head">
+    <p class="eyebrow">Best Offers</p>
+    <h2>Where the deals are landing this month</h2>
+  </div>
+  <div class="offer-track">
+
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=900&auto=format&fit=crop" alt="Istanbul skyline with the Hagia Sophia">
+      <div class="offer-body">
+        <span class="offer-tag">Turkey</span>
+        <h3>Istanbul Escape</h3>
+        <p>5 days / 4 nights · flights + hotel + airport transfer</p>
+        <div class="offer-foot">
+          <span class="offer-price">From $399</span>
+          <a href="#contact" class="btn btn-small">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=900&auto=format&fit=crop" alt="Dubai skyline at sunset with the Burj Khalifa">
+      <div class="offer-body">
+        <span class="offer-tag">Dubai</span>
+        <h3>Dubai Skyline Break</h3>
+        <p>4 days / 3 nights · flights + 4★ hotel + city tour</p>
+        <div class="offer-foot">
+          <span class="offer-price">From $549</span>
+          <a href="#contact" class="btn btn-small">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?q=80&w=900&auto=format&fit=crop" alt="Pyramids of Giza in Egypt at golden hour">
+      <div class="offer-body">
+        <span class="offer-tag">Egypt</span>
+        <h3>Cairo &amp; The Pyramids</h3>
+        <p>6 days / 5 nights · flights + hotel + Giza &amp; Luxor tours</p>
+        <div class="offer-foot">
+          <span class="offer-price">From $479</span>
+          <a href="#contact" class="btn btn-small">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1561815634-04f6e3938225?q=80&w=900&auto=format&fit=crop" alt="Old Tbilisi rooftops in Georgia">
+      <div class="offer-body">
+        <span class="offer-tag">Georgia</span>
+        <h3>Tbilisi &amp; The Mountains</h3>
+        <p>5 days / 4 nights · flights + hotel + Kazbegi day trip</p>
+        <div class="offer-foot">
+          <span class="offer-price">From $429</span>
+          <a href="#contact" class="btn btn-small">Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== DESTINATIONS ===== -->
+<section class="destinations" id="destinations">
+  <div class="section-head light">
+    <p class="eyebrow">Destinations</p>
+    <h2>Pick a place. We'll handle the rest.</h2>
+  </div>
+  <div class="dest-grid">
+    <a href="#contact" class="dest-card" style="background-image:url('https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=900&auto=format&fit=crop')">
+      <span class="dest-name">Turkey</span>
+      <span class="dest-link">Explore trips →</span>
+    </a>
+    <a href="#contact" class="dest-card" style="background-image:url('https://images.unsplash.com/photo-1546412414-e1885259563a?q=80&w=900&auto=format&fit=crop')">
+      <span class="dest-name">Dubai</span>
+      <span class="dest-link">Explore trips →</span>
+    </a>
+    <a href="#contact" class="dest-card" style="background-image:url('https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=900&auto=format&fit=crop')">
+      <span class="dest-name">Egypt</span>
+      <span class="dest-link">Explore trips →</span>
+    </a>
+    <a href="#contact" class="dest-card" style="background-image:url('https://images.unsplash.com/photo-1565008576549-57569a49371d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3')">
+      <span class="dest-name">Georgia</span>
+      <span class="dest-link">Explore trips →</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="section-head">
+    <p class="eyebrow">Services</p>
+    <h2>Everything between booking and boarding</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-item">
+      <h3>Flight Booking</h3>
+      <p>Domestic and international tickets, compared across carriers for the best fare.</p>
+    </div>
+    <div class="service-item">
+      <h3>Hotel Reservations</h3>
+      <p>Vetted stays at every price point, from budget rooms to beachfront resorts.</p>
+    </div>
+    <div class="service-item">
+      <h3>Guided Tour Packages</h3>
+      <p>Fully planned itineraries with transport, guides, and entry tickets included.</p>
+    </div>
+    <div class="service-item">
+      <h3>Visa Assistance</h3>
+      <p>Document checklists and application support for visa-required destinations.</p>
+    </div>
+    <div class="service-item">
+      <h3>Airport Transfers</h3>
+      <p>A driver waiting at arrivals, every time, in every city we operate in.</p>
+    </div>
+    <div class="service-item">
+      <h3>Travel Insurance</h3>
+      <p>Coverage for the things you hope never happen, arranged before you fly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW TO BOOK ===== -->
+<section class="how">
+  <div class="section-head">
+    <p class="eyebrow">How It Works</p>
+    <h2>Three steps to takeoff</h2>
+  </div>
+  <div class="how-grid">
+    <div class="how-step">
+      <span class="how-num">1</span>
+      <h3>Choose a trip</h3>
+      <p>Browse offers and destinations, or tell us what you're picturing.</p>
+    </div>
+    <div class="how-step">
+      <span class="how-num">2</span>
+      <h3>Send a request</h3>
+      <p>Message us on WhatsApp or fill the contact form with your dates.</p>
+    </div>
+    <div class="how-step">
+      <span class="how-num">3</span>
+      <h3>Confirm &amp; pack</h3>
+      <p>We confirm the booking, send your documents, and you get packing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="section-head">
+    <p class="eyebrow">Travelers Say</p>
+    <h2>Trips people actually talk about</h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <p>"Every detail was organized before we landed — hotel, transfer, even restaurant tips."</p>
+      <span>— Ahmad, Amman</span>
+    </div>
+    <div class="testi-card">
+      <p>"Quick replies on WhatsApp the entire time. Felt like traveling with a friend who plans ahead."</p>
+      <span>— Sara, Zarqa</span>
+    </div>
+    <div class="testi-card">
+      <p>"Booked Dubai in one evening. Everything matched exactly what was promised."</p>
+      <span>— Omar, Irbid</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== JOURNAL ===== -->
+<section class="journal" id="journal">
+  <div class="section-head">
+    <p class="eyebrow">The Journal</p>
+    <h2>Notes from the road</h2>
+  </div>
+  <div class="journal-grid">
+    <a href="#" class="journal-card">
+      <img src="https://images.unsplash.com/photo-1527838832700-5059252407fa?q=80&w=900&auto=format&fit=crop" alt="Istanbul streets and tram">
+      <div class="journal-body">
+        <h3>10 Places You Can't Skip in Istanbul</h3>
+        <span class="journal-read">Read more →</span>
+      </div>
+    </a>
+    <a href="#" class="journal-card">
+      <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=900&auto=format&fit=crop" alt="Dubai marina at night">
+      <div class="journal-body">
+        <h3>A 5-Day Dubai Itinerary That Actually Works</h3>
+        <span class="journal-read">Read more →</span>
+      </div>
+    </a>
+    <a href="#" class="journal-card">
+      <img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?q=80&w=900&auto=format&fit=crop" alt="Camels near the pyramids in Egypt">
+      <div class="journal-body">
+        <h3>Getting a Turkey Visa: The Short Version</h3>
+        <span class="journal-read">Read more →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== CONTACT CTA ===== -->
+<section class="cta-band" id="contact">
+  <div class="cta-inner">
+    <p class="eyebrow">Ready When You Are</p>
+    <h2>Where's the next trip taking you?</h2>
+    <p class="cta-sub">Send us your dates — we'll have options back to you the same day.</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/962000000000" class="btn btn-primary" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a href="tel:+962000000000" class="btn btn-outline-light">Call Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <p class="logo">ALBATROSS</p>
+      <p>Travel planning built around how you actually want to travel.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#destinations">Destinations</a>
+      <a href="#offers">Offers</a>
+      <a href="#services">Services</a>
+      <a href="#journal">Journal</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+962000000000">+962 00 000 0000</a>
+      <a href="mailto:hello@albatross-travel.com">hello@albatross-travel.com</a>
+      <p>Amman, Jordan</p>
+    </div>
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <p>Sun – Thu: 9:00 AM – 6:00 PM</p>
+      <p>Fri – Sat: By appointment</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 ALBATROSS Travel Co. All rights reserved.</p>
+    <a href="#">Privacy Policy</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
